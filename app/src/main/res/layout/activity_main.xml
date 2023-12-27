@@ -1,0 +1,55 @@
+<!-- res/layout/activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+
+    <SeekBar
+        android:id="@+id/seekBarAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarAge"
+        android:layout_marginTop="8dp"
+        android:text="Age: 0"/>
+
+    <Spinner
+        android:id="@+id/spinnerUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAge"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerUnit"
+        android:layout_marginTop="16dp"
+        android:hint="Temperature"/>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTemperature"
+        android:layout_marginTop="16dp"
+        android:text="Calculate"/>
+
+</RelativeLayout>
